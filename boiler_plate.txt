@@ -1,0 +1,21 @@
+boiler_plate:
+
+Fonts {Headline,Descroption,Quote}
+Icon/Fontasesome
+bootstrap
+color=> color1=#0872b9
+color2=#5bc5f4
+images
+
+section{
+1. welcome
+2.menu
+3. hero
+4.about
+5.service
+6.portfolio
+7.team
+8.testimonial
+9.footer linke
+10.Footer
+}

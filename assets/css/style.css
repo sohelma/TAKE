@@ -1,0 +1,223 @@
+
+
+  
+  /* @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;500;800&family=Raleway:wght@400;600&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Yeseva+One&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans';
+    box-sizing: border-box; /* Border-box: padding use korle box boro hoi. Atake control kore. */
+    scroll-behavior: smooth;     /* about page a click korle smoothly scroll hobe. suddenly na*/
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Open Sans';}
+p{font-family: 'Open Sans';}
+/*------headline a oswald use so h ke dia upore only open sens p are jonn raklam------*/
+/*------BG on scroll start- for plug------------*/
+
+
+    @keyframes bgDown {
+        from{transform: translateY(-100px);}
+        to{transform: translateY(0);} 
+    }  
+    
+    
+/* plugin preloader start*/
+.preloader{position: fixed;
+width: 100%;
+height: 100vh;
+background: lightgray;z-index: 6;
+display: flex;justify-content: center;align-items: center;}
+
+.custom-loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: rgb(21, 1, 41);
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+/* ------------plugin preloader end*-------------/
+/*------Back to top button start-for plugin-------*/
+.back_to_top {position:fixed;bottom: 2px;right: 40px;
+   /*-- first time test then jq use korbo for condition--*/
+    animation:btt 0.4s ease-in ;z-index: 4;
+    }
+/*------Back to top button end--------*/
+/*-------- --Menu start -------------*/
+.navbar{padding: 13px 0px 13px;}
+.navbar{position: fixed; 
+background:rgba(255,255,255,0.2);width: 100%; 
+   transition:.4s;z-index: 5;}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 0;font-size: 14px;}
+.navbar-brand {font-size: 35px;font-weight: 600;
+}
+.nav-link {font-weight: 700;color: gray;font-size: 15px;}
+.nav-link:hover {color: white;}
+.btn{color: white;}
+
+.nav_icon{list-style: none;}
+.nav_icon li {color: #e1b73a;}
+
+.container img{font-size: 8px;}
+/*----------------Hero part start--------------------*/
+
+
+.hero_part{background-image: url(../img/bg1.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  /* background-position: center top; */
+}
+.mobile img{position: relative;}
+.mobile-image {width: 470px; position: absolute; top: 150px;}
+
+.bg_animation{animation: bgDown 0.4s ease-out;
+}
+.hero_part h2{margin-top: 200px;font-size: 55px;}
+
+
+ /*------------------ second part ------------*/
+ .second_part h4{font-size: 35px;}
+
+ /*------------------ -Gallary part start------------*/
+ .gallery1{background-image: url(..//img/gallery1.png);
+background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.gallery p{font-size: 13px;}
+.gallery2{background-image: url(..//img/gallery2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
+  .gallery3{background-image: url(..//img/gallery3.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+    .gallery4{background-image: url(..//img/gallery4.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+    .gallery5{background-image: url(..//img/gallery5.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+    .gallery1:hover{background: #f5979c;}
+    .gallery2:hover{background: #615e7d;}
+    .gallery3:hover{background: #cace07;}
+    .gallery4:hover{background: #e226e2;}
+    .gallery5:hover{background: #81c99c;}
+   
+     /*------------------LOOK part start------------*/
+     .look_con h6{font-weight: 700;}
+
+      /*------------------MORE part start------------*/
+
+     .moor_part{
+      background-image: url(..//img/bg-car.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+      height: 550px;
+    }
+   
+    .more_con{padding: 50px 50px;}
+    /*-----------------Reason part start------------*/
+    .reasons{background: #81c99c;}
+
+ /*-----------------GO part start------------*/
+
+    .go_con,.go_con2 p{color: gray;}
+    .btn1{border:none;padding: 8px 18px;border-radius:6%;font-size: 14px;font-weight: 600;}
+    .btn2{background: #81c99c;border: none;padding: 12px 20px;
+      border-radius:6%;font-weight: 600;font-size: 14px;}
+      .go_icon{font-size: 35px;}
+      .fa-apple{ margin-right:10px}
+ .btn3{background: #7d0488;border:none;padding: 8px 18px;border-radius:6%;font-size:14px;font-weight: 600;}
+.go_con2{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 20px 20px;
+}
+.go_con{padding: 20px 20px;
+}
+/*-----------------footpart start------------*/
+.foot{background: #192331;}
+.foot_list{list-style: none;}
+.foot_list a {
+ text-decoration: none;color:white;font-size: 13px;
+}
+.f_con{font-size: 13px;}
+
+.check {
+  background: #81c99c;
+  color: white;
+  width: 10%;
+  height: 60px;
+  margin-left: -4px;
+  border: 3px solid #81c99c;
+}
+.input{width:70%;height: 60px;}
+.fa-solid{font-size: 20px;}
+
+/*------------------media query start-----------------*/
+@media (max-width: 786px) {
+  .mobile-image {
+    width: 370px;margin-left: 350px;
+  }
+  .hero_part h2 {
+    margin-top: 100px;
+    font-size: 35px;padding: 0 70px;
+}
+.hero_part p{padding: 0 70px;}
+} 
+
+
+
+
+@media screen and (max-width: 576px) {
+  .mobile-image {
+    width: 230px;margin-left: 320px;
+    top: 50px;
+  }
+  .hero_part h2 {
+    margin-top: 10px;
+    font-size: 35px;padding: 0 70px;
+}
+.hero_part p{padding: 0 70px;}
+
+}  
+
+@media screen and (max-width: 320px) {
+  .mobile-image {
+    width: 200px;margin-left: 10px;
+    top: 50px;
+  }
+  .hero_part h2 {
+    margin-top: 10px;
+    font-size: 35px;padding: 0 70px;
+}
+.hero_part p{padding: 0 70px;}
+
+}  
